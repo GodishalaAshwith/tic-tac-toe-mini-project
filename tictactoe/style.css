@@ -6,6 +6,7 @@
 body{
   background-color: #548687;
   text-align: center;
+  
 }
 
 h1::selection,.message::selection{
@@ -22,6 +23,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 .game {
@@ -43,6 +45,14 @@ h1 {
   font-size: 8vmin;
   color:#b0413e;
   background-color:#ffffc7 ;
+  background:linear-gradient(15deg,#fafa8c,#9ee9cc);
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+}
+
+.box:hover {
+  cursor: pointer;
+  transform: scale(0.925);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .reset-button {
@@ -52,6 +62,7 @@ h1 {
   color:#fff;
   border-radius: 1rem;
   border: none;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
 }
 
 .new-button {
@@ -61,23 +72,28 @@ h1 {
   color:#fff;
   border-radius: 1rem;
   border: none;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
 }
 
 .new-button:hover {
   background-color: #fff;
   color: #191913;
   cursor: pointer;
+  transform: scale(1.15);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .reset-button:hover {
   background-color: #ffffc7;
   color: #191913;
   cursor: pointer;
+  transform: scale(1.15);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .message {
   color: #ffffc7;
-  font-size: 5vmin;
+  font-size: 10vmin;
 }
 
 .msg-container {
